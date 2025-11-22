@@ -1,0 +1,235 @@
+.upload-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.upload-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(135, 206, 250, 0.2);
+  text-align: center;
+}
+
+.section-title {
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.file-upload-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f0f8ff 100%);
+  border: 2px dashed #87ceeb;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.file-upload-label:hover {
+  background: linear-gradient(135deg, #d0e7f7 0%, #e0f0ff 100%);
+  border-color: #5fb3d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(135, 206, 250, 0.3);
+}
+
+.file-upload-icon {
+  font-size: 3rem;
+}
+
+.file-upload-text {
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(135, 206, 250, 0.2);
+}
+
+.card-title {
+  margin: 0 0 1.5rem 0;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 2px solid #e3f2fd;
+  padding-bottom: 0.75rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e3f2fd 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(135, 206, 250, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.summary-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(135, 206, 250, 0.2);
+}
+
+.summary-label {
+  color: #5a6c7d;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary-value {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chart-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(135, 206, 250, 0.2);
+}
+
+.chart-container {
+  height: 400px;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #fafbfc 0%, #f0f8ff 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(135, 206, 250, 0.3);
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #87ceeb 0%, #5fb3d3 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(135, 206, 250, 0.4);
+}
+
+.download-button:hover {
+  background: linear-gradient(135deg, #5fb3d3 0%, #4a9bc4 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(135, 206, 250, 0.5);
+}
+
+.download-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(135, 206, 250, 0.4);
+}
+
+.button-icon {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .upload-page {
+    gap: 1.5rem;
+  }
+
+  .upload-section,
+  .summary-card,
+  .chart-section {
+    padding: 1.5rem;
+  }
+
+  .section-title,
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .chart-container {
+    height: 300px;
+    padding: 0.75rem;
+  }
+
+  .download-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-section,
+  .summary-card,
+  .chart-section {
+    padding: 1rem;
+  }
+
+  .file-upload-label {
+    padding: 1.5rem;
+  }
+
+  .file-upload-icon {
+    font-size: 2.5rem;
+  }
+
+  .chart-container {
+    height: 250px;
+  }
+}
+
