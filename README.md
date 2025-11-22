@@ -9,6 +9,7 @@ This project is a hybrid application consisting of a Django REST backend, a Reac
 Users can upload a CSV file containing chemical equipment data. The backend processes it, generates summary statistics, stores history, and provides a PDF summary report.
 
 2. Features
+
    Backend
    CSV upload API
    Summary statistics (Flowrate, Pressure, Temperature)
@@ -38,6 +39,7 @@ Web: React.js, Axios, Chart.js
 Desktop: PyQt5, Matplotlib, Requests
 
 4. Running the Project
+   
    Backend
    cd backend
    pip install -r requirements.txt
@@ -54,17 +56,20 @@ cd frontend-desktop
 python desktop_app.py
 
 5. API Endpoints
+   
    Method Endpoint Description
    POST /api/upload/ Upload CSV & return summary
    GET /api/history/ Get last 5 uploads
    GET /api/report/ Download latest PDF report
    POST /api/login/ Basic authentication
 
-6. Authentication
+7. Authentication
+   
    A basic login API is included in the backend:
    POST /api/login/
    { "username": "", "password": "" }
 
-7. Author
+9. Author
+    
    Asmetha SureshBabu Thoppe
    B.Tech CSE, 3rd Year
