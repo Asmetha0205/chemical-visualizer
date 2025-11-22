@@ -1,2 +1,37 @@
-venv/ 
-*.pyc 
+# Python
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+*/venv/
+*/env/
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Node.js (React Web App)
+# Dependency folders
+frontend-web/node_modules/
+frontend-web/build/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+*.log
+
+
+.idea/
+.vscode/
