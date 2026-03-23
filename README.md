@@ -1,7 +1,7 @@
-**Chemical Equipment Parameter Visualizer**
+# **Chemical Equipment Parameter Visualizer**
 
-Hybrid Web + Desktop Application
-FOSSEE Winter Internship Screening Task (2025)
+## Hybrid Web + Desktop Application
+### FOSSEE Winter Internship Screening Task (2025)
 
 > 1. Overview
 
