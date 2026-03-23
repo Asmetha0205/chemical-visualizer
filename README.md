@@ -40,13 +40,13 @@ PDF download
 
 > 4. Running the Project
    
-**Backend **  
+**Backend**  
 cd backend   
 pip install -r requirements.txt   
 python manage.py migrate   
 python manage.py runserver   
 
-**Web Frontend **  
+**Web Frontend**  
 cd frontend-web   
 npm install   
 npm start   
