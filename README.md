@@ -38,7 +38,13 @@ PDF download
 **Web:** React.js, Axios, Chart.js   
 **Desktop:** PyQt5, Matplotlib, Requests   
 
-> 4. Running the Project
+> 4. Demonstration of the project
+
+The demo below illustrates the complete workflow of the application, from uploading a CSV file to generating summary statistics, visualizations, history records, and downloadable PDF reports.
+
+https://github.com/user-attachments/assets/4fbece35-182a-4be6-be07-4a325986690d
+
+> 5. Running the Project
    
 **Backend**  
 cd backend   
@@ -55,7 +61,7 @@ npm start
 cd frontend-desktop   
 python desktop_app.py   
 
-> 5. API Endpoints
+> 6. API Endpoints
    
 **Method Endpoint Description**   
 POST /api/upload/ Upload CSV & return summary   
@@ -63,13 +69,13 @@ GET /api/history/ Get last 5 uploads
 GET /api/report/ Download latest PDF report   
 POST /api/login/ Basic authentication   
 
-> 6. Authentication
+> 7. Authentication
    
 A basic login API is included in the backend:
 POST /api/login/   
 { "username": "", "password": "" }   
 
-> 7. Author
+> 8. Author
     
 Asmetha SureshBabu Thoppe   
 B.Tech CSE, 3rd Year
